@@ -7,11 +7,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /> <!--metatextblock-->
     <title>MetaMorph</title>
 
-    <link rel="stylesheet" href="css/grid.css" type="text/css" />
-    <link rel="stylesheet" href="css/style.css" type="text/css"  />
-    <link rel="stylesheet" href="css/animation.css" type="text/css" />
-    <link rel="stylesheet" href="css/cover.css" type="text/css"/>
-    <link rel="stylesheet" href="css/fonts.css" type="text/css"/>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/grid.css') }}" type="text/css" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" type="text/css"  />
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/animation.css') }}" type="text/css" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/cover.css') }}" type="text/css"/>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/fonts.css') }}" type="text/css"/>
     <script type="text/javascript">function t_onReady(func) {
             if (document.readyState != 'loading') {
                 func();
@@ -28,9 +28,9 @@
                 }, (time || 100));
             }
         } function t_throttle(fn, threshhold, scope) { return function () { fn.apply(scope || this, arguments); }; }</script>
-    <script src="js/script.js" charset="utf-8" async></script>
-    <script src="js/lazyload.js" charset="utf-8" async ></script>
-    <script src="js/animation.js" charset="utf-8" async></script>
+    <script src="{{ url_for('static', filename='js/script.js') }}" charset="utf-8" async></script>
+    <script src="{{ url_for('static', filename='js/lazyload.js') }}" charset="utf-8" async ></script>
+    <script src="{{ url_for('static', filename='js/animation.js') }}" charset="utf-8" async></script>
 </head>
 
 <body class="body">
@@ -47,7 +47,7 @@
                     <div class="t481__leftside">
                         <div class="t481__leftcontainer" style="display: block;"> <img
                                 class="t481__imglogo t481__imglogomobile"
-                                src="images/butterfly_logo.png"
+                                src="{{ url_for('static', filename='images/butterfly_logo.png') }}"
                                 style="max-width: 65px;width: 65px; height: auto; display: block;">
                         </div>
                     </div>
@@ -75,7 +75,7 @@
             <div class="t-cover" id="recorddiv723451517" bgimgfield="img"
                 style="height:100vh;">
                 <div class="t-cover__carrier" id="coverCarry723451517" data-content-cover-id="723451517"
-                    data-content-cover-bg="images/background_image.jpg"
+                    data-content-cover-bg="{{ url_for('static', filename='images/background_image.jpg') }}"
                     data-display-changed="true" data-content-cover-height="100vh" data-content-cover-parallax=""
                     style="height:100vh;background-attachment:scroll; ">
                 </div>
@@ -100,12 +100,12 @@
                                         <div class="t182__buttons">
                                             <div class="t-btnwrapper t182__btnwrapper t-animate"
                                                 data-animate-style="fadeinup" data-animate-group="yes"><a
-                                                    href="#" target="" class="t182__btn t-btn t-btn_md "
+                                                     target="" class="t182__btn t-btn t-btn_md "
                                                     style="color:#000000;background-color:#ffffff;border-radius:15px; -moz-border-radius:15px; -webkit-border-radius:15px;text-transform:uppercase;box-shadow:0px 10px 20px rgba(255,255,255,0.25);"
                                                     data-buttonfieldset="button">
                                                     <table role="presentation" style="width:100%; height:100%;">
                                                         <tr>
-                                                            <td data-field="buttontitle">Get Started</td>
+                                                            <td data-field="buttontitle" onclick="redirectToPromptPage()">Get Started</td>
                                                         </tr>
                                                     </table>
                                                 </a></div>
@@ -116,6 +116,11 @@
                         </div>
                     </div>
                 </div><!-- arrow -->
+                <script>
+                    function redirectToPromptPage() {
+                        window.location.href = "/prompt";
+                    }
+                </script>
                 <div class="t-cover__arrow">
                     <div class="t-cover__arrow-wrapper t-cover__arrow-wrapper_animated">
                         <div class="t-cover__arrow_mobile"><svg role="presentation" class="t-cover__arrow-svg"
@@ -138,7 +143,7 @@
                         <div class="t677__row t677__row_3-images">
                             <div class="t677__tile t677__tile_left">
                                 <div class="t677__bgimg t677__bgimg_1 t-bgimg t-animate"
-                                    data-original="images/overview_1.jpg"
+                                    data-original="{{ url_for('static', filename='images/overview_1.jpg') }}"
                                     data-animate-style="fadeinright" data-animate-group="yes" data-animate-order="2"
                                     data-animate-delay="0.3">
                                 </div>
@@ -146,13 +151,13 @@
                             <div class="t677__tile t677__tile_right">
                                 <div class="t677__wrapper t677__wrapper_top" >
                                     <div class="t677__bgimg t677__bgimg_2 t-bgimg t-animate"
-                                        data-original="images/overview_2.jpg"
+                                        data-original="{{ url_for('static', filename='images/overview_2.jpg') }}"
                                         data-animate-style="fadeinright" data-animate-group="yes" data-animate-order="1">
                                     </div>
                                 </div>
                             <div class="t677__wrapper t677__wrapper_bottom" >
                                 <div class="t677__bgimg t677__bgimg_3 t-bgimg t-animate"
-                                        data-original="images/overview_3.jpg"
+                                        data-original="{{ url_for('static', filename='images/overview_3.jpg') }}"
                                         data-animate-style="fadeinright" data-animate-group="yes" data-animate-order="3"
                                         data-animate-delay="0.3">
                                     </div>
@@ -219,7 +224,7 @@
                                 <div class="t509__imgwrapper" itemscope
                                     itemtype="http://schema.org/ImageObject">
                                     <div class="t509__blockimg t-bgimg"
-                                        data-original="images/features_1.jpg"
+                                        data-original="{{ url_for('static', filename='images/features_1.jpg') }}"
                                         bgimgfield="li_img__4136100789100" data-image-width="460"
                                         data-image-height="340px">
                                     </div>
@@ -232,7 +237,7 @@
                                 <div class="t509__imgwrapper" itemscope
                                     itemtype="http://schema.org/ImageObject">
                                     <div class="t509__blockimg t-bgimg"
-                                        data-original="images/features_2.jpg"
+                                        data-original="{{ url_for('static', filename='images/features_2.jpg') }}"
                                         bgimgfield="li_img__4136100789101" data-image-width="460"
                                         data-image-height="340px">
                                     </div>
@@ -280,7 +285,7 @@
             <div class="t-cover" id="recorddiv723906212" bgimgfield="img"
                 style="height:40vh;">
                 <div class="t-cover__carrier" id="coverCarry723906212" data-content-cover-id="723906212"
-                    data-content-cover-bg="images/background_image.jpg"
+                    data-content-cover-bg="{{ url_for('static', filename='images/background_image.jpg') }}"
                     data-display-changed="true" data-content-cover-height="40vh" data-content-cover-parallax=""
                     style="height:40vh;background-attachment:scroll; " itemscope
                     itemtype="http://schema.org/ImageObject">
