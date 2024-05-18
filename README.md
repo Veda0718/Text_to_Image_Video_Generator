@@ -50,12 +50,16 @@ Open the provided URL in your web browser to access the application.
 "A graffiti of a robot serving meals to people"<br>
 "A beautiful cabin in Attersee, Austria, 3d animation style"<br>
 
-<div style="display: grid; grid-template-columns: repeat(2, 1fr); grid-gap: 20px;">
-  <img src="static/images/astronaut.png" alt="Image 1">
-  <img src="static/images/girl.png" alt="Image 2">
-  <img src="static/images/cabin.png" alt="Image 3">
-  <img src="static/images/graffiti.png" alt="Image 4">
-</div>
+<table>
+  <tr>
+    <td><img src="static/images/girl.png" alt="Example Image 1" style="width:50%;"/></td>
+    <td><img src="static/images/cabin.png" alt="Example Image 2" style="width:50%;"/></td>
+  </tr>
+  <tr>
+    <td><img src="static/images/astronaut.png" alt="Example Image 3" style="width:100%;"/></td>
+    <td><img src="static/images/graffiti.png" alt="Example Image 4" style="width:100%;"/></td>
+  </tr>
+</table>
 
 ## Acknowledgements
 Metamorph harnesses the cutting-edge Stable Diffusion XL (SDXL) model by StabilityAI, offering unparalleled text-to-image generation, while acknowledging potential biases and content considerations outlined in the model card.
