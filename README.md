@@ -50,24 +50,13 @@ Open the provided URL in your web browser to access the application.
 "A graffiti of a robot serving meals to people"<br>
 "A beautiful cabin in Attersee, Austria, 3d animation style"<br>
 
-<table style="border:0; align-items:center;">
-  <tr>
-    <td><img src="static/images/girl.png" alt="Example Image 1" style="width:100%;"/></td>
-    <td><img src="static/images/cabin.png" alt="Example Image 2" style="width:100%;"/></td>
-  </tr>
-  <tr>
-    <td><img src="static/images/astronaut.png" alt="Example Image 3" style="width:100%;"/></td>
-    <td><img src="static/images/graffiti.png" alt="Example Image 4" style="width:100%;"/></td>
-  </tr>
-</table>
-
 <p align="center">
-  <img src="static/images/girl.png" alt="Example Image 1" width="400"/>
-  <img src="static/images/cabin.png" alt="Example Image 2" width="400"/>
+  <img src="static/images/girl.png" width="400"/>
+  <img src="static/images/cabin.png" width="400"/>
 </p>
 <p align="center">
-  <img src="static/images/astronaut.png" alt="Example Image 3" width="400"/>
-  <img src="static/images/graffiti.png" alt="Example Image 4" width="400"/>
+  <img src="static/images/astronaut.png" width="400"/>
+  <img src="static/images/graffiti.png" width="400"/>
 </p>
 
 
