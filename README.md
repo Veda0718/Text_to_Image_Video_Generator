@@ -62,12 +62,12 @@ Open the provided URL in your web browser to access the application.
 </table>
 
 <p align="center">
-  <img src="path_to_your_image1.png" alt="Example Image 1" width="400"/>
-  <img src="path_to_your_image2.png" alt="Example Image 2" width="400"/>
+  <img src="static/images/girl.png" alt="Example Image 1" width="400"/>
+  <img src="static/images/cabin.png" alt="Example Image 2" width="400"/>
 </p>
 <p align="center">
-  <img src="path_to_your_image3.png" alt="Example Image 3" width="400"/>
-  <img src="path_to_your_image4.png" alt="Example Image 4" width="400"/>
+  <img src="static/images/astronaut.png" alt="Example Image 3" width="400"/>
+  <img src="static/images/graffiti.png" alt="Example Image 4" width="400"/>
 </p>
 
 
