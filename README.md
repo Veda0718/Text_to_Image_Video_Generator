@@ -50,10 +50,10 @@ Open the provided URL in your web browser to access the application.
 "A graffiti of a robot serving meals to people"<br>
 "A beautiful cabin in Attersee, Austria, 3d animation style"<br>
 
-<table>
+<table style="border:none; align-items:center;">
   <tr>
-    <td><img src="static/images/girl.png" alt="Example Image 1" style="width:50%;"/></td>
-    <td><img src="static/images/cabin.png" alt="Example Image 2" style="width:50%;"/></td>
+    <td><img src="static/images/girl.png" alt="Example Image 1" style="width:100%;"/></td>
+    <td><img src="static/images/cabin.png" alt="Example Image 2" style="width:100%;"/></td>
   </tr>
   <tr>
     <td><img src="static/images/astronaut.png" alt="Example Image 3" style="width:100%;"/></td>
