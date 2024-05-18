@@ -1,1 +1,0 @@
-Text to Image and Video Generator
